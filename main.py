@@ -5,6 +5,7 @@ import musiclibrary
 import requests
 from openai import OpenAI
 import openai
+import os
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
@@ -81,5 +82,3 @@ if __name__ == "__main__":
                     processCommand(command)
         except Exception as e:
             print("Error...".format(e))
-
-
