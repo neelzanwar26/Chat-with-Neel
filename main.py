@@ -70,7 +70,7 @@ if __name__ == "__main__":
         try:
             with sr.Microphone() as source:
                 print("Listening...")
-                audio = r.listen(source, timeout=2, phrase_time_limit= 2)
+                audio = r.listen(source, timeout=2, phrase_time_limit= 5)
             word = r.recognize_google(audio)
             if(word.lower()== "hey neel"):
                 speak("yes sir")
